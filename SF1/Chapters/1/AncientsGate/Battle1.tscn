@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://by33vslntf0l"]
+
+[ext_resource type="PackedScene" uid="uid://chh0r46ha46oo" path="res://SF1/Chapters/1/AncientsGate/Map.tscn" id="1_3ef5p"]
+[ext_resource type="PackedScene" uid="uid://md5r0acdoddr" path="res://General/Player/Player.tscn" id="2_bnikv"]
+
+[node name="Battle1" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_3ef5p")]
+position = Vector2(308, 260)
+
+[node name="Player" parent="." instance=ExtResource("2_bnikv")]
+position = Vector2(252, 204)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = 0
+limit_top = 0
+limit_right = 632
+limit_bottom = 552
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0

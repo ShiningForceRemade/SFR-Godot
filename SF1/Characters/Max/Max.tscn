@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqruxtb0hq0co"]
+
+[ext_resource type="Texture2D" uid="uid://cphydth7p6f6k" path="res://Assets/SF1/PlayableCharacters/Max/Unpromoted_Map_Sprites.png" id="1_oqpa1"]
+
+[node name="Max" type="Node2D"]
+
+[node name="UnpromotedMapSprites" type="Sprite2D" parent="."]
+texture = ExtResource("1_oqpa1")
+hframes = 10

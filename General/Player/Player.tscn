@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://md5r0acdoddr"]
+
+[ext_resource type="PackedScene" uid="uid://dqruxtb0hq0co" path="res://SF1/Characters/Max/Max.tscn" id="1_h6tvm"]
+[ext_resource type="Script" path="res://General/Player/Player.gd" id="1_mbd1p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q00cj"]
+size = Vector2(24, 24)
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_mbd1p")
+
+[node name="Max" parent="." instance=ExtResource("1_h6tvm")]
+position = Vector2(0, -6)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_q00cj")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 18)
