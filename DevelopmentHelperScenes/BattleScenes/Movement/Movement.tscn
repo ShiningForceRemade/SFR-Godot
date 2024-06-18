@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnxq03opu110o"]
+
+[ext_resource type="Texture2D" uid="uid://dx3t2gghhekht" path="res://Assets/CustomTileStandInformation.png" id="1_dmdrd"]
+
+[node name="Movement" type="Node2D"]
+
+[node name="CustomTileStandInformation" type="Sprite2D" parent="."]
+position = Vector2(136, 264)
+texture = ExtResource("1_dmdrd")
