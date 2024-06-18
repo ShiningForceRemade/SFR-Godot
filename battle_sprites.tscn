@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlkat1qrkr3p6"]
+
+[ext_resource type="Texture2D" uid="uid://cdpgdnc1xd0v4" path="res://Assets/SF1/EnemiesAndBosses/Dark Dwarf/Battle_Sprites.png" id="1_qlmt0"]
+
+[node name="BattleSprites" type="Sprite2D"]
+position = Vector2(328, 160)
+texture = ExtResource("1_qlmt0")
